@@ -1,0 +1,117 @@
+:root {
+  font-family: 'Lexend Giga', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --c-white: rgb(236, 236, 236);
+  --c-yellow: rgb(251, 201, 1);
+  --c-black: rgb(7, 7, 7);
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+::selection {
+  background-color: var(--c-yellow);
+  color: var(--c-black);
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--c-black);
+
+}
+
+.allpage {
+  width:100%;
+
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-family: "Rampart One";
+  font-size: 4rem;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+.icon {
+  max-width: 40px;
+  transition: transform 0.25s ease-in-out;
+}
+
+.icon-holder:hover .icon {
+  transform: scale(1.1);
+}
+
+.container {
+  color: var(--c-white);
+  max-width: 1120px !important;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+}
+
+.header-img {
+  max-width: 450px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: 600;
+  border-bottom:2px solid var(--c-yellow);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+section {
+  margin: 7.5% auto;
+}
+
+.prikazy-container {
+  text-align: left;
+}
+
+.prikazy-item {
+  margin: 25px auto;
+}
+
+.prikaz {
+  display: inline-block;
+  background-color: var(--c-yellow);
+  padding: 5px 15px;
+  color: var(--c-black);
+  border-radius: 7px;
+  
+}
+
+footer {
+  background-color: var(--c-black);
+  margin-bottom: 0;
+  font-size: 0.65rem !important;
+  padding: 25px;
+  margin: 0px -15px;
+}
+
